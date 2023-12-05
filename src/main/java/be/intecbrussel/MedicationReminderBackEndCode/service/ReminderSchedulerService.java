@@ -16,8 +16,8 @@ public class ReminderSchedulerService {
     @Autowired
     private MedicationScheduleService medicationScheduleService;
 
-    @Autowired
-    private NotificationService notificationService;
+//    @Autowired
+//    private NotificationService notificationService;
 
     @Scheduled(fixedRate = 60000) // Run every minute (adjust the rate as needed)
     //@Scheduled(cron = "0 0/5 * * * *") // Cron expression to check every 5 minutes
