@@ -4,5 +4,5 @@ RUN mvn clean package -DskipTests
 
 FROM openjdk:17.0.1-jdk-slim
 COPY --from=build /target/MedicationReminderBackEndCode-0.0.1-SNAPSHOT.jar MedicationReminderBackEndCode.jar
-
+EXPOSE 8080
 ENTRYPOINT ["java","-jar","MedicationReminderBackEndCode.jar"]
